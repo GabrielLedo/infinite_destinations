@@ -129,7 +129,7 @@ p {
 
 .services-container {
   width: 100%;
-  margin-top: 50vh;
+  margin-top: 40vh;
   padding: 10px;
   position: relative;
 }
@@ -347,3 +347,135 @@ footer{
     font-weight: bold;
     margin: 20px 0 100px;
 }
+
+/* media queries */
+
+@media (max-width: 1600px){
+    .services-container{
+        margin-top: 70vh;
+    }
+}
+
+/* small laptops: 1200px */
+@media (max-width: 1200px){
+    .services-container{
+        margin-top: 70vh;
+    }
+
+    .plans-container{
+        width: 95%;
+    }
+
+    .plan{
+        margin: 0 0px;
+    }
+}
+
+/* tablet 900px */
+@media(max-width: 768px){
+    .main-banner .principal-text{
+        margin: 0;
+        padding: 10px;
+        width: 350px;
+        height: 100px;
+        text-align: left;
+    }
+
+    .searchdomain-container{
+        padding: 4rem;
+    }
+}
+
+/* cellphones 576px */
+@media (max-width: 576px) {
+
+    .main-banner .principal-text{
+        margin: 0;
+        padding: 10px;
+        width: 250px;
+        height: 150px;
+        text-align: left;
+    }
+
+    .plans-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .plan{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-container input,
+    .contact-container textarea{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 414px) {
+
+    html body{
+        overflow-x: hidden;
+    }
+
+    .main-banner .principal-text{
+        margin: 0;
+        padding: 10px;
+        width: 250px;
+        height: 150px;
+        text-align: left;
+    }
+
+    .navbar-container .logo{
+        width: 80px;
+        margin-top: 40px;
+    }
+    .navbar-items li{
+        font-size: 5px;
+        margin: 0;
+    }
+
+    .services-topic ul{
+        flex-direction: column;
+    }
+
+    .plans-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .plan{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .searchdomain-container h2{
+        font-size: 36px;
+    }
+
+    .searchdomain-container input[type="text"]{
+        width: 100%;
+    }
+
+    .contact-container h2{
+        font-size: 24px;
+    }
+    .contact-container p{
+        font-size: 16px;
+    }
+
+    .contact-container textarea{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .contact-container input{
+        width: 300px;
+        margin: 10px 0;
+    }
+
+}
+
