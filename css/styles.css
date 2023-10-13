@@ -1,0 +1,120 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Sans', sans-serif;
+
+}
+
+/* variables */
+:root{
+    --text : #1a1a1a;
+    --paragraph: #333232;
+    --navbar-text:#fafafa;
+    --navbar: #111;
+}
+
+h1, h2, h3{
+    color: var(--text);
+}
+
+p{
+    color: var(--paragraph);
+}
+
+/* navbar */
+.navbar-container{
+    width: 100%;
+    height: 80px;
+    padding: 0 2rem;
+    border-bottom: rgba(17, 17, 17, 0.548) solid 0.2px;
+}
+
+.navbar{
+    position: relative;
+}
+
+.logo{
+    width: 250px;
+    margin-top: 17px;
+}
+
+.navbar-items{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 25px 0 25px;
+}
+
+.navbar-items li a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--text);
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navbar-items li a:before{
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    height: 3px;
+    width: 10px;
+    background: var(--text);
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+
+.navbar-items li a:hover:before{
+    width: 60px;
+    background: #8ca9ff;
+}
+
+.navbar-items li a:hover{
+    color: #8ca9ff;
+}
+
+.default-btn{
+    padding: 15px 20px;
+    background-color: #00ccbb;
+    border-radius: 5px;
+}
+
+.default-btn:hover{
+    background-color: var(--navbar);
+    box-shadow: 10px 10px;
+}
+
+.main-banner{
+    padding: 5rem;
+}
+
+/* css for the background - video */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .main-banner h1,
+  .main-banner p{
+    font-weight: bold;
+    text-align: left;
+    text-shadow: #000 1px 1px;
+}
+
